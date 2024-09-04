@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="./css/normolize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>TEAM DELIVERY AUTO</title>
+</head>
+<body class="body">
+    <header class="header header-visible">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__menu">
+                    <a href="" class="header__menu-link">Авто из Японии</a>
+                    <a href="" class="header__menu-link">Авто из Китая</a>
+                    <a href="" class="header__menu-link">Авто из Кореи</a>
+                    <a href="" class="header__menu-link">О компании</a>
+                </div>
+                <a href="" class="header__logo-link">
+                    <img src="./image/Header-Logo.svg" alt="" class="header__logo-img">
+                </a>
+                <div class="header__contacts">
+                    <div class="header__contacts-left">
+                        <p class="header__contacts-town">Владивосток</p>
+                        <a class="header__contacts-tel">8 (800) 500-49-46</a>
+                    </div>
+                    <div class="header__contacts-right">
+                        <a href="" class="header__contacts-link">
+                            <img src="./image/tg.svg" alt="">
+                        </a>
+                        <a href="" class="header__contacts-link">
+                            <img src="./image/wthp.svg" alt="">
+                        </a>
+                        <a href="" class="header__contacts-link">
+                            <img src="./image/vk.svg" alt="">
+                        </a>
+                        <a href="" class="header__contacts-link">
+                            <img src="./image/youtube.svg" alt="">
+                        </a>
+                        <a href="" class="header__contacts-link">
+                            <img src="./image/Insta.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+
+        <section class="main">
+            <div class="main__background-img--container">
+                <img class="main__background-img" src="./video/Main-Video.gif" alt="я джифка">
+            </div>
+            <div class="container">
+                <div class="main__inner"> 
+                    <h1 class="main__title">Выбери свой стиль,<br>свой идеальный автомобиль</h1>
+                    <form class="main__form" action="">
+                        <!-- <select class="form-select "  aria-label="Default select example">
+                            <option selected></option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select> -->
+                        <div class="dropdown main__form-select">
+                            <button class="btn btn-secondary dropdown-toggle main__form-select--button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="main__dropdown-img" src="./image/region-svg.svg" alt="">
+                                <p class="main__dropdown-text">Регион доставки</p>
+                                <img class="main__dropdown-arrow" src="./image/Arrow-Down.svg">
+                            </button>
+                            <ul class="dropdown-menu main__form-select--menu">
+                              <li><a class="dropdown-item main__form-select--item" href="#">Action</a></li>
+                              <li><a class="dropdown-item main__form-select--item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item main__form-select--item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown main__form-select">
+                            <button class="btn btn-secondary dropdown-toggle main__form-select--button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="main__dropdown-img" src="./image/Auto-svg.svg" alt="">
+                                <p class="main__dropdown-text">Тип авто</p>
+                                <img class="main__dropdown-arrow" src="./image/Arrow-Down.svg">
+                            </button>
+                            <ul class="dropdown-menu main__form-select--menu">
+                              <li><a class="dropdown-item main__form-select--item" href="#">Action</a></li>
+                              <li><a class="dropdown-item main__form-select--item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item main__form-select--item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <button class="main__form-button">Рассчитать стоимость</button>
+                    </form>
+                    <div class="main__achievements">
+                        <div class="main__achievements-item main__achievements-item--left">
+                            <h2 class="main__achievements-item--title">7+</h2>
+                            <p class="main__achievements-item--text">Лет на рынке</p>
+                        </div>
+                        <div class="main__achievements-item main__achievements-item--center">
+                            <h2 class="main__achievements-item--title">4 000 +</h2>
+                            <p class="main__achievements-item--text">Авто привезли</p>
+                        </div>
+                        <div class="main__achievements-item main__achievements-item--right">
+                            <h2 class="main__achievements-item--title">24/7</h2>
+                            <p class="main__achievements-item--text">На связи</p>
+                        </div>
+                    </div>
+                    <p class="main__suptext">Откройте для себя разнообразие и<br>преимущества автомобилей из<br>Японии, Кореи и Китая.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="companies">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <a class="swiper-slide" style="background-image: url(./image/BMW.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/Toyta.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/Audi.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/Ki.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/nissan.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/5892/98e2/a7e0686ae9dd66bf4979611a359472cf?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hbB8qi7WAYbNWq9XCPLRFJhWCpuZMbk383e2TkYd47L2pn-SCsl4aoK5tTXB74Q7Aockolak06rLMsoPK73TeEtnuP64SsrQmAymX9hUFUXY7eNb95oK2r82GavBUBmU7VmO7sN9sInBUIne5vmXXxuQNpKb9c7EKXSuk1PB3jkveXzWetwACHCClx7brGcbQ8ezr6egOukBhb2x53sfke7z17XjcHDMfrvy-I9LlN-l10UUgGAdu~vkTnOZFDOy3EKHsrdLjpI8DbBgG6u-AsLopeDyZoZy9kgLFnUApkZ6tUFgOIvACOmStxwZmLO14exbRE~3Owmnw8Ums9wNEg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/8a08/280d/819ba26de2ecc4d2d5f478fc79a594d5?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Pd5RV9Sqv-jeB4mXIMZpGbHnQGGfCO4voOMoFxOUTQN1pO038~SnMp9Ke0wNVu8RX7dtYQpG3FKHg~15Xi5BEbBgjLWVdLVAukL-boZliYEAvz8Q0iAvu5VvtsFQr7yIXdnzU7Nj5twkwO06fV38eziSUAUnyIznMNv5ZSyhjC8o-GzYY6g4jhrFG7pk8chot-waSXYLw1tdfG~DFqTeh39CW1AgaBEDY25sGMublKVlDCnmy2~TVOWF-aCkj~7cImIForD-JCLxB8Cf9qkH29RRCXvmHkT0uvB2TRipGA6xKYNiTMY7Z~eg0LA2tk-3BG9XnCA3YAjDkTS2ckJinA__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/2f19/caef/fb9a1e3096f5d6ca10840dbd65dc6e9e?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SF99epUhP4au3EYI6ggLOlEmaLJFmKJEVn3e1THDQ9AOV4QVosnp9ewoP8WoNZpmVyX9PSdpfOgtFaFWDw9feo48AvjJAq0qoanhptwL8YsVqVc05aAdDLHt21KBvO-m9~Z8nZpATQkHV1DRCtjuZ5RNS4QPN~OqIRPRS0CEQbGqtV-Qpg03t-jtizijlAkwcvbslzpGqjqzLKbN2W0TGCKhq9Zl2Xps~BZGtnw9Ge7-nkIFItFytdaaS~SvMQFDuHWVrEsLpZwSo71XH8St6ngJ0K9kMUsw8~pxdNOAhdpzUrjEjHXxAMyHz7PvX5mte-L0t3OhmVEWwMV5Sxud4A__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/baaa/3cde/7c61c045d41f828eed5cf4e86f5e3f69?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HFY-3i-DhMy6q4tA1R9l1wGIkMV~aIMIEQIlHT05qZ3Z5IrU3~ao255Y3c3BFmjNGT9M3Mw3P6Urup2BWiVF~1A9mEEEmN9AnMBHA1qtU2s2eCtysb3CBItnqoafrAtxIiEUXjBjQi~J99lWZvBeLhWHXazJaPmUni0igWLysr4nevYcEtI1sqcwArxOZ7HaMA7Kp~YJ67HMkd0vjqeQ0yAYDyHvr1XNx5xWt7o28HBEfVH8Pf2wf1Aj3IvO1iECHOgPW2Rd5eBjjRqmQD3ihst4KlWhhDJUU-qJpEtZkkiqOy~9Zcf5dKPevRslPDzZeMtKdW~KGBuBYWrLetTjgg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/836c/1ce5/4c19f5c1f3baef3ff35eda12529a8ad4?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=isQNN3UvkjWqJQumMwxVDG~YSU1ErbGt5nS6s2cyNMYox62lEmAD-Pm3oy6eXb6Jw2oOaOkwGxkYS4wvm603dGevyiyQaNHhH24dr1pA-9Nm61fZ1yBO6JNcL8XL89clOGv7lp~uLNb6iI7uNxJnSwnhp8wOQIfT0Ubov6qg-3MJ9nDC5xzTCK4VGnO9V4HYyyAmXRdB07sUBRSJIU9-duCqVX5LzYrIS5VjEfFFET2U8WZX7qGUAOwaiNU8l~jwHF0RQXNjREAuQpOymvAXQ6kcN~apAUfXMj3xxwB7E6EdgTxiM6Ok8DAGCgrjhO3eqF93jso4mZuZrcnncg3B-Q__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/7bc3/2760/d0fdf3ff67b9b1497062d6a10a3c9081?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gRiLXtXAEerrWZ1v3wmrzhoc0XoAFxw2fRe04JO265YuDaopXfF5RAZVXRLUTLd3MfoVGw~DnifXV1dfaWzr387MiSDB2pQVHz255kPYd6FyxS0eZRS6y8-N3kN1-TFuA-NAk11GjYzNlGvzkou-0FEs17MtizLUoRaTtL-Kwv7Jd7jzXBWA0Fw5El3YQVjayduUI0JLcsNmGfWgB92fFxyyFgIBUnRrfELeDPnhpuiaTk0p2EX9GGdBH2L00pVIHD-6AVBVgmR-MgRDBSmRp2hYr9AiMRBDm9Sz6Qrkqib6yE-I4jEtcw0T423ZWB1PbvFHSR27gUlAErS~P8jGlg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/431c/b9f2/c487f8613a491d652736ee5092ba0b7d?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W6d54d3H4tQOmU8gpy8vAyWXrng7t9F60dG1y4PLaIzYL94Z8QmeY7B8FT7boX3A-FfnRWKOclClrojaFxsmhTaSFMjSy6WKYZ1HnIW5-Sedpp0UW5P8tBz3eKSckjsts8PhrdquarbAtsJTcLH0zoANCY-QSvGYo-sEmDX6q~-L2ZjTNcxkpakdKz~j6Ik622vBVSGdJdqXXcfc6KR9QSAkWzr7F4M1i8VHgscBVtpk6G-pOwCUpUlj3bFEUjeOjOIpMHdF-7cUiSaUDeNgENyq5xvjUaJpOQCkJJV7pjxreV9UZiyXddc2p-tCGELmSVq0BuSNyEER4XtPmY3SRg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/5d12/d086/dbca82d5e92b80ec2658637adb4bfe69?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qAa5AgRNN9doyG~a73605Kehy3gPFlJJs0sIFukQUglto-naegGp9Gh~xivrS~YzKnRZEGWQ~I11R8O1BRBTv59Qa047u8DcFnf0NdASBhiYrAMTaInDugY92WeInoDBdoGTrP3dWogplXzzqf2rZcHo0O1L4DiV5UBwQeUsmuzLt3MbrxTTNQkjyRrF2PJU4djshRFvi9ELrhzaH7RU2pUOGp1D6om0-qgeCetpH0W1xw3P-hj-ZM5FG3jngs~9yBXQxnJO8XStpoQ2SRSgoJRk3llbCIIraa~-fadUCFqHjLXZP5PWASy~H7bBMwEaLbkUO3~v5KEJcT-kcy~fvw__);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/BMW.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/Toyta.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/Audi.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/Ki.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(./image/nissan.svg);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/5892/98e2/a7e0686ae9dd66bf4979611a359472cf?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hbB8qi7WAYbNWq9XCPLRFJhWCpuZMbk383e2TkYd47L2pn-SCsl4aoK5tTXB74Q7Aockolak06rLMsoPK73TeEtnuP64SsrQmAymX9hUFUXY7eNb95oK2r82GavBUBmU7VmO7sN9sInBUIne5vmXXxuQNpKb9c7EKXSuk1PB3jkveXzWetwACHCClx7brGcbQ8ezr6egOukBhb2x53sfke7z17XjcHDMfrvy-I9LlN-l10UUgGAdu~vkTnOZFDOy3EKHsrdLjpI8DbBgG6u-AsLopeDyZoZy9kgLFnUApkZ6tUFgOIvACOmStxwZmLO14exbRE~3Owmnw8Ums9wNEg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/8a08/280d/819ba26de2ecc4d2d5f478fc79a594d5?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Pd5RV9Sqv-jeB4mXIMZpGbHnQGGfCO4voOMoFxOUTQN1pO038~SnMp9Ke0wNVu8RX7dtYQpG3FKHg~15Xi5BEbBgjLWVdLVAukL-boZliYEAvz8Q0iAvu5VvtsFQr7yIXdnzU7Nj5twkwO06fV38eziSUAUnyIznMNv5ZSyhjC8o-GzYY6g4jhrFG7pk8chot-waSXYLw1tdfG~DFqTeh39CW1AgaBEDY25sGMublKVlDCnmy2~TVOWF-aCkj~7cImIForD-JCLxB8Cf9qkH29RRCXvmHkT0uvB2TRipGA6xKYNiTMY7Z~eg0LA2tk-3BG9XnCA3YAjDkTS2ckJinA__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/2f19/caef/fb9a1e3096f5d6ca10840dbd65dc6e9e?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SF99epUhP4au3EYI6ggLOlEmaLJFmKJEVn3e1THDQ9AOV4QVosnp9ewoP8WoNZpmVyX9PSdpfOgtFaFWDw9feo48AvjJAq0qoanhptwL8YsVqVc05aAdDLHt21KBvO-m9~Z8nZpATQkHV1DRCtjuZ5RNS4QPN~OqIRPRS0CEQbGqtV-Qpg03t-jtizijlAkwcvbslzpGqjqzLKbN2W0TGCKhq9Zl2Xps~BZGtnw9Ge7-nkIFItFytdaaS~SvMQFDuHWVrEsLpZwSo71XH8St6ngJ0K9kMUsw8~pxdNOAhdpzUrjEjHXxAMyHz7PvX5mte-L0t3OhmVEWwMV5Sxud4A__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/baaa/3cde/7c61c045d41f828eed5cf4e86f5e3f69?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HFY-3i-DhMy6q4tA1R9l1wGIkMV~aIMIEQIlHT05qZ3Z5IrU3~ao255Y3c3BFmjNGT9M3Mw3P6Urup2BWiVF~1A9mEEEmN9AnMBHA1qtU2s2eCtysb3CBItnqoafrAtxIiEUXjBjQi~J99lWZvBeLhWHXazJaPmUni0igWLysr4nevYcEtI1sqcwArxOZ7HaMA7Kp~YJ67HMkd0vjqeQ0yAYDyHvr1XNx5xWt7o28HBEfVH8Pf2wf1Aj3IvO1iECHOgPW2Rd5eBjjRqmQD3ihst4KlWhhDJUU-qJpEtZkkiqOy~9Zcf5dKPevRslPDzZeMtKdW~KGBuBYWrLetTjgg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/836c/1ce5/4c19f5c1f3baef3ff35eda12529a8ad4?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=isQNN3UvkjWqJQumMwxVDG~YSU1ErbGt5nS6s2cyNMYox62lEmAD-Pm3oy6eXb6Jw2oOaOkwGxkYS4wvm603dGevyiyQaNHhH24dr1pA-9Nm61fZ1yBO6JNcL8XL89clOGv7lp~uLNb6iI7uNxJnSwnhp8wOQIfT0Ubov6qg-3MJ9nDC5xzTCK4VGnO9V4HYyyAmXRdB07sUBRSJIU9-duCqVX5LzYrIS5VjEfFFET2U8WZX7qGUAOwaiNU8l~jwHF0RQXNjREAuQpOymvAXQ6kcN~apAUfXMj3xxwB7E6EdgTxiM6Ok8DAGCgrjhO3eqF93jso4mZuZrcnncg3B-Q__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/7bc3/2760/d0fdf3ff67b9b1497062d6a10a3c9081?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=gRiLXtXAEerrWZ1v3wmrzhoc0XoAFxw2fRe04JO265YuDaopXfF5RAZVXRLUTLd3MfoVGw~DnifXV1dfaWzr387MiSDB2pQVHz255kPYd6FyxS0eZRS6y8-N3kN1-TFuA-NAk11GjYzNlGvzkou-0FEs17MtizLUoRaTtL-Kwv7Jd7jzXBWA0Fw5El3YQVjayduUI0JLcsNmGfWgB92fFxyyFgIBUnRrfELeDPnhpuiaTk0p2EX9GGdBH2L00pVIHD-6AVBVgmR-MgRDBSmRp2hYr9AiMRBDm9Sz6Qrkqib6yE-I4jEtcw0T423ZWB1PbvFHSR27gUlAErS~P8jGlg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/431c/b9f2/c487f8613a491d652736ee5092ba0b7d?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=W6d54d3H4tQOmU8gpy8vAyWXrng7t9F60dG1y4PLaIzYL94Z8QmeY7B8FT7boX3A-FfnRWKOclClrojaFxsmhTaSFMjSy6WKYZ1HnIW5-Sedpp0UW5P8tBz3eKSckjsts8PhrdquarbAtsJTcLH0zoANCY-QSvGYo-sEmDX6q~-L2ZjTNcxkpakdKz~j6Ik622vBVSGdJdqXXcfc6KR9QSAkWzr7F4M1i8VHgscBVtpk6G-pOwCUpUlj3bFEUjeOjOIpMHdF-7cUiSaUDeNgENyq5xvjUaJpOQCkJJV7pjxreV9UZiyXddc2p-tCGELmSVq0BuSNyEER4XtPmY3SRg__);"></a>
+                    <a class="swiper-slide" style="background-image: url(https://s3-alpha-sig.figma.com/img/5d12/d086/dbca82d5e92b80ec2658637adb4bfe69?Expires=1726444800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qAa5AgRNN9doyG~a73605Kehy3gPFlJJs0sIFukQUglto-naegGp9Gh~xivrS~YzKnRZEGWQ~I11R8O1BRBTv59Qa047u8DcFnf0NdASBhiYrAMTaInDugY92WeInoDBdoGTrP3dWogplXzzqf2rZcHo0O1L4DiV5UBwQeUsmuzLt3MbrxTTNQkjyRrF2PJU4djshRFvi9ELrhzaH7RU2pUOGp1D6om0-qgeCetpH0W1xw3P-hj-ZM5FG3jngs~9yBXQxnJO8XStpoQ2SRSgoJRk3llbCIIraa~-fadUCFqHjLXZP5PWASy~H7bBMwEaLbkUO3~v5KEJcT-kcy~fvw__);"></a>
+                </div>
+              </div>
+        </section>
+
+    </main>
+    <footer></footer>
+
+    <script>
+        var swiperOptions = {
+            loop: true,
+            freeMode: true,
+            spaceBetween: 24,
+            grabCursor: true,
+            slidesPerView: 'auto',
+            loop: true,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: true
+            },
+            freeMode: true,
+            speed: 5000,
+            freeModeMomentum: false,
+            allowTouchMove:false,
+            centeredSlides: true
+        };
+
+        var swiper = new Swiper(".swiper-container", swiperOptions);
+    </script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
