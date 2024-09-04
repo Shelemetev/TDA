@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
-
+    box-sizing: border-box;
 }
 
-p,h1,h1,h3,h4 {
+p,h1,h2,h3,h4 {
     margin: 0;
     padding: 0;
 }
@@ -215,7 +215,7 @@ button {
     padding: 12px 0;
 }
   
-.swiper-slide {
+.companies__swiper-slide {
     width: 100px ;
     overflow: hidden;
     background-position: center center;
@@ -234,7 +234,7 @@ button {
     transition: .5s;
 }
 
-.swiper-slide:hover {
+.companies__swiper-slide:hover {
     filter: grayscale(1) opacity(1);
 }
   
@@ -327,4 +327,175 @@ button {
 
 .body {
     height: 5000px;
+}
+
+.catalog__title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.catalog__title-text {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.catalog__japan {
+    padding: 40px 0 60px;
+}
+
+.catalog__japan-main {
+    margin-top: 24px;
+}
+
+.catalog__china-main {
+    margin-top: 24px;
+}
+
+.catalog__japan-btns {
+    display: flex;
+    gap: 12px;
+}
+
+.catalog__btn {
+    background-color: #F4F0F4;
+    border-radius: 28px;
+    padding: 8px 16px;
+    color: #0D1C12;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.catalog__btn--active {
+    background-color: #00335B;
+    color: #FFFFFF; 
+}
+
+.catalog__btn--all {
+    background-color: #00335B;
+    color: #FFFFFF;
+}
+
+.catalog__slide {
+    padding: 8px;
+    background-color: #F4F0F4;
+    border-radius: 24px;
+    width: 100%;
+    position: relative;
+}
+
+.catalog__swiper {
+    margin-top: 24px;
+    overflow: hidden;
+    position: relative;
+}
+
+.catalog__slide-img {
+    width: 100%;
+    border-radius: 24px;
+    height: 180px;
+}
+
+.catalog__slide-title {
+    color: #232323;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+.catalog__slide-suptext {
+    margin-top: 8px;
+    color: #23232380;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.catalog__slide-img--box {
+    position: relative;
+}
+
+.catalog__slide-count {
+    color: #232323;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 27px;
+}
+
+.catalog__slide--hidden {
+    display: none;
+}
+
+.catalog__slide-btn {
+    background-color: #FFFFFF;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #232323;
+    font-weight: 500;
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+}
+
+.swiper-buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 32px;
+}
+
+.catalog__japan-btns {
+    position: relative;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    position: relative;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #00335B;
+    background-image: none;
+}
+
+.swiper-button-next::after {
+    position: absolute;
+    font-family: 'icomoon' !important;
+    content: "\e903";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.swiper-button-prev::after {
+    position: absolute;
+    font-family: 'icomoon' !important;
+    content: "\e904";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.catalog__china-btns {
+    position: relative;
+}
+
+.catalog__korea-btns {
+    position: relative;
+}
+
+.catalog__korea-main {
+    margin-top: 24px;
+}
+
+.catalog__china {
+    padding: 40px 0 60px;
+}
+
+.catalog__korea {
+    padding: 40px 0 60px;
 }
