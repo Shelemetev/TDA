@@ -46,12 +46,12 @@
                         <a href="" class="header__contacts-link">
                             <img src="./image/wthp.svg" alt="">
                         </a>
-                        <a href="" class="header__contacts-link">
+                        <!-- <a href="" class="header__contacts-link">
                             <img src="./image/vk.svg" alt="">
                         </a>
                         <a href="" class="header__contacts-link">
                             <img src="./image/youtube.svg" alt="">
-                        </a>
+                        </a> -->
                         <a href="" class="header__contacts-link">
                             <img src="./image/Insta.svg" alt="">
                         </a>
@@ -160,7 +160,7 @@
             <div class="container">
                 <div class="catalog__japan">
                     <div class="catalog__title">
-                        <h2 class="catalog__title-text">Популярные авто из Японии</h2>
+                        <h2 class="catalog__title-text"><span class="text--grey">Популярные авто</span> из Японии</h2>
                         <img src="./image/Jpan-flag.svg" alt="" class="catalog__title-img">
                     </div>
                     <div class="catalog__japan-main">
@@ -187,7 +187,7 @@
                 </div>
                 <div class="catalog__china">
                     <div class="catalog__title">
-                        <h2 class="catalog__title-text">Популярные авто из Китая</h2>
+                        <h2 class="catalog__title-text"><span class="text--grey">Популярные авто</span> из Китая</h2>
                         <img src="./image/China-flag.svg" alt="" class="catalog__title-img">
                     </div>
                     <div class="catalog__china-main">
@@ -214,7 +214,7 @@
                 </div>
                 <div class="catalog__korea">
                     <div class="catalog__title">
-                        <h2 class="catalog__title-text">Популярные авто из Кореи</h2>
+                        <h2 class="catalog__title-text"><span class="text--grey">Популярные авто</span> из Кореи</h2>
                         <img src="./image/Korea-flag.svg" alt="" class="catalog__title-img">
                     </div>
                     <div class="catalog__korea-main">
@@ -238,6 +238,72 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <img class="delivery--img" src="./image/Paralax car.png" alt="" srcset="">
+            <div class="container">
+                <div class="delivery__inner">
+                    <h2 class="delivery__title">Доставка</h2>
+                    <p class="delivery__text"><span class="text--grey">Отправляем</span> ваш автомобиль<br>любой <span class="text--grey">транспортной</span> компанией</p>
+                    <form class="delivery__form" action="">
+                        <div class="dropdown delivery__form-select">
+                            <button class="btn delivery__form-select-btn delivery__form-select--map btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <p class="delivery__btn-text">Регион доставки</p>
+                              <img src="./image/Arrow-Down.svg" alt="" class="delivery__btn-img">
+                            </button>
+                            <ul class="dropdown-menu delivery__form-select-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown delivery__form-select">
+                            <button class="btn delivery__form-select-btn delivery__form-select--auto btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <p class="delivery__btn-text">Тип авто</p>
+                              <img src="./image/Arrow-Down.svg" alt="" class="delivery__btn-img">
+                            </button>
+                            <ul class="dropdown-menu delivery__form-select-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+    
+                        <p class="delivery__form-text">от <span class="delivery--count">15 000</span> ₽</p>
+                        <p class="delivery__form-suptext">Срок доставки: от <span class="delivery--date">7</span> дней</p>
+    
+                        <div class="delivery__form-btns">
+                            <button class="delivery__form-btn">Получить консультацию</button>
+                            <a class="delivery__form-link">
+                                <img src="./image/WTHP__LINK.png" alt="" class="delivery__form-link--img">
+                            </a>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="about">
+            <img class="about__back--1" src="./image/About_bck1.png">
+            <img class="about__back--2" src="./image/About__bck2.png">
+            <div class="container">
+                <div class="about__inner">
+                    <h2 class="about__title">О нас</h2>
+                    <p class="about__text">Компания «Team Delivery Auto» предлагает широкий выбор<br>автомобилей от ведущих мировых производителей. Мы<br>специализируемся на продаже новых и подержанных авто. Наша<br>команда профессионалов поможет вам выбрать идеальный<br>автомобиль, учитывая ваши потребности и бюджет.</p>
+                </div>
+                <div class="about__btns">
+                    <button class="about__btn about__btn-consultation">Получить консультацию</button>
+                    <button class="about__btn about__btn-feedback">
+                        <div class="about__btn-rate">
+                            <img src="./image/Star.svg" alt="" class="about__btn-rate--img">
+                            <p class="about__btn-rate--text">4.9</p>
+                        </div>
+                        <p class="about__btn-text">Смотреть отзывы</p>
+                    </button>
                 </div>
             </div>
         </section>
@@ -273,5 +339,6 @@
     <script src="./js/catalog-japan.js"></script>
     <script src="./js/catalog-china.js"></script>
     <script src="./js/catalog-korea.js"></script>
+    <script src="./js/paralax.js"></script>
 </body>
 </html>
