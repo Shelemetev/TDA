@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.js" integrity="sha512-BjE6jVr0CP6MHwhQDktnlrSZsenyvbFgyBatZDZIvaNH9hiCVeyeh4vm0CR2JKLvNYGBPKpQQhAhr6hj6Fd4Ug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/addons/cleave-phone.ru.js" integrity="sha512-dSXSpCsgx+mWGZjelEzcJtb+fMB8NBepOd7oy2hy5DU4Fj4wX5SclVjdOR3lztHDN8AGUn2zwNq/XLF7T64DwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -291,10 +295,8 @@
                                 <p class="delivery__btn-text">Регион доставки</p>
                                 <img src="./image/Arrow-Down.svg" alt="" class="delivery__btn-img">
                             </button>
-                            <ul class="dropdown-menu delivery__form-select-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu delivery__form-select-menu delivery__form-select-menu--region">
+                                
                             </ul>
                         </div>
                         <div class="dropdown delivery__form-select">
@@ -304,14 +306,12 @@
                                 <p class="delivery__btn-text">Тип авто</p>
                                 <img src="./image/Arrow-Down.svg" alt="" class="delivery__btn-img">
                             </button>
-                            <ul class="dropdown-menu delivery__form-select-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu delivery__form-select-menu delivery__form-select-menu--cars">
+                                
                             </ul>
                         </div>
 
-                        <p class="delivery__form-text">от <span class="delivery--count">15 000</span> ₽</p>
+                        <p class="delivery__form-text">от <span class="delivery--count">0</span> ₽</p>
                         <p class="delivery__form-suptext">Срок доставки: от <span class="delivery--date">7</span> дней
                         </p>
 
@@ -664,26 +664,27 @@
                         <div class="contacts__form-section contacts__form-section--flex">
                             <div class="contacts__form-input--box">
                                 <p class="contacts__form-text">Имя</p>
-                                <input type="text" class="contacts__form-input">
+                                <input type="text" maxlength="50" name="name" class="contacts__form-input">
                             </div>
                             <div class="contacts__form-input--box">
                                 <p class="contacts__form-text">Телефон (Обязательно)</p>
-                                <input type="text" class="contacts__form-input">
+                                <input type="text" name="phone" class="contacts__form-input contacts__form-input--tel">
                             </div>
                         </div>
                         <div class="contacts__form-section">
                             <div class="contacts__form-input--box">
                                 <p class="contacts__form-text">Уточните свой вопрос</p>
-                                <textarea type="text" class="contacts__form-input"></textarea>
+                                <textarea type="text" name="question" class="contacts__form-input contacts__form-textarea"></textarea>
                             </div>
                         </div>
                         <div class="contacts__form-section contacts__form-section--bottom">
                             <div class="contacts__form-input--box contacts__form-input--box-flex">
-                                <input type="checkbox" class="contacts__form-input contacts__form-checkbox">
-                                <p class="contacts__form-text">С правилами политики<br>конфиденциальности ознакомлен</p>
+                                <input class="contacts__form-checkbox" type="checkbox" id="check" name="check" value="yes">
+                                <label class="custom--checkbox" for="check"></label>
+                                <p class="contacts__form-text">С <a href="" class="blue--link">правилами политики<br>конфиденциальности</a> ознакомлен</p>
                             </div>
                             <div class="contacts__form-input--box contacts__form-btn--box">
-                                <button class="contacts__form-btn">Отправить</button>
+                                <button disabled class="contacts__form-btn">Отправить</button>
                             </div>
                         </div>
                     </form>
@@ -768,11 +769,20 @@
         });
     </script>
 
+    <script>
+        var cleave = new Cleave('.contacts__form-input--tel', {
+            phone: true,
+            phoneRegionCode: 'RU'
+        });
+    </script>
+
     <script src="./js/script.js"></script>
     <script src="./js/catalog-japan.js"></script>
     <script src="./js/catalog-china.js"></script>
     <script src="./js/catalog-korea.js"></script>
     <script src="./js/paralax.js"></script>
+    <script src="./js/contacts-form.js"></script>
+    <script src="./js/delivery.js"></script>
 </body>
 
 </html>

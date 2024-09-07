@@ -730,7 +730,7 @@ button {
 
 .about__back--1, .about__back--2 {
     position: absolute;
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .about__back--1 {
@@ -743,6 +743,7 @@ button {
     z-index: 1;
     bottom: 0;
     left: 70%;
+    transform: translate(-50%);
 }
 
 .stages {
@@ -962,7 +963,7 @@ button {
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
-    bottom: 50px;
+    bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -1072,13 +1073,17 @@ button {
 }
 
 .contacts__form-btn {
-    background-color: #FFFFFF80;
+    background-color: #00335B;
     border-radius: 12px;
     padding: 16px 32px;
     color: #FFFFFF;
     font-size: 16px;
-    font-weight: 400;
-    
+    font-weight: 400;  
+    transition: 0.5s;
+}
+
+.contacts__form-btn:disabled {
+    background-color: #FFFFFF80;
 }
 
 .contacts__form-input--box {
@@ -1093,12 +1098,19 @@ button {
     display: flex;
 }
 
-.footer {
+body {
     position: relative;
-    top: -50px;
-    padding: 40px 0 0px;
+    padding-bottom: 240px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    /* top: -50px; */
+    padding: 40px 0 24px;
     border-radius: 60px 60px 0px 0px;
     background-color: #FFFFFF;
+    width:100%;
 }
 
 .footer__top {
@@ -1154,7 +1166,7 @@ button {
 
 .footer__bottom {
     background-color: #FFFFFF;
-    padding: 24px 0 0;
+    padding: 24px 0 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1165,3 +1177,38 @@ button {
     font-weight: 400;
 }
 
+.contacts__form-textarea {
+    height: 101px;
+    resize: none;
+}
+
+.contacts__form-checkbox {
+    display: none;
+}
+
+.custom--checkbox {
+    width: 28px;
+    height: 28px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.contacts__form-checkbox:checked + .custom--checkbox {
+    background-color: #00335B;
+    position: relative;
+}
+
+.contacts__form-checkbox:checked + .custom--checkbox::before {
+    content: "\e905";
+    font-family: 'icomoon' !important;
+    color: #FFFFFF;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.blue--link {
+    color: #2AA2FF;
+}
