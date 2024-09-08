@@ -1212,3 +1212,21 @@ body {
 .blue--link {
     color: #2AA2FF;
 }
+
+.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-car .odometer-digit {
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    background-image: none !important;
+    border: none !important;
+    font-family: "Inter", sans-serif !important;
+    color: #232323;
+}
+
+.odometer.odometer-auto-theme, .odometer.odometer-theme-car {
+    background: none;
+}
+
+.odometer-digit-inner, .odometer-value {
+    padding: 0 !important;
+}

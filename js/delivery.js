@@ -1,3 +1,5 @@
+
+
 dataDelivery = {
     "allRegion": ["Хабаровск","Благовещенск"],
     "allCars" : ["СЕДАН","КРОССОВЕР"],
@@ -56,3 +58,13 @@ let Click = (elem) => {
         document.querySelector('.delivery--count').innerHTML = dataDelivery.data[region][car]
     }
 }
+
+od = new Odometer({
+    el: document.querySelector('.delivery--count'),
+    value: 0,
+   
+    // Остальные опции передаются в этом же объекте
+    format: '( ddd)',
+    // theme: 'digital'
+});
+
