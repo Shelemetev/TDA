@@ -92,35 +92,29 @@
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                         </select> -->
-                        <div class="dropdown main__form-select">
+                        <div class="dropdown main__form-select main__form-select--region">
                             <button class="btn btn-secondary dropdown-toggle main__form-select--button" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="main__dropdown-img" src="./image/region-svg.svg" alt="">
                                 <p class="main__dropdown-text">Регион доставки</p>
                                 <img class="main__dropdown-arrow" src="./image/Arrow-Down.svg">
                             </button>
-                            <ul class="dropdown-menu main__form-select--menu">
-                                <li><a class="dropdown-item main__form-select--item" href="#">Action</a></li>
-                                <li><a class="dropdown-item main__form-select--item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item main__form-select--item" href="#">Something else here</a>
-                                </li>
+                            <ul class="dropdown-menu main__form-select--menu main__form-select--menu--region">
+                                
                             </ul>
                         </div>
-                        <div class="dropdown main__form-select">
+                        <div class="dropdown main__form-select main__form-select--auto">
                             <button class="btn btn-secondary dropdown-toggle main__form-select--button" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 <img class="main__dropdown-img" src="./image/Auto-svg.svg" alt="">
                                 <p class="main__dropdown-text">Тип авто</p>
                                 <img class="main__dropdown-arrow" src="./image/Arrow-Down.svg">
                             </button>
-                            <ul class="dropdown-menu main__form-select--menu">
-                                <li><a class="dropdown-item main__form-select--item" href="#">Action</a></li>
-                                <li><a class="dropdown-item main__form-select--item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item main__form-select--item" href="#">Something else here</a>
-                                </li>
+                            <ul class="dropdown-menu main__form-select--menu main__form-select--menu--auto">
+                                
                             </ul>
                         </div>
-                        <button class="main__form-button">Рассчитать стоимость</button>
+                        <button class="main__form-button" type="button">Рассчитать стоимость</button>
                     </form>
                     <div class="main__achievements">
                         <div class="main__achievements-item main__achievements-item--left">
@@ -360,7 +354,7 @@
                     <h2 class="stages__title">Этапы работы</h2>
                     <div class="stages__main">
                         <div class="stages__progress">
-                            <div class="stages__progress-section">
+                            <div data-section="1" class="stages__progress-section stages__progress-section--1 stages__progress-section--active">
                                 <div class="stages__progress-point">01</div>
                                 <div class="stages__progress-dotes">
                                     <div class="stages__progress-dote"></div>
@@ -378,7 +372,7 @@
                                     <div class="stages__progress-dote"></div>
                                 </div>
                             </div>
-                            <div class="stages__progress-section">
+                            <div data-section="2" class="stages__progress-section stages__progress-section--2">
                                 <div class="stages__progress-point">02</div>
                                 <div class="stages__progress-dotes">
                                     <div class="stages__progress-dote"></div>
@@ -396,7 +390,7 @@
                                     <div class="stages__progress-dote"></div>
                                 </div>
                             </div>
-                            <div class="stages__progress-section">
+                            <div data-section="3" class="stages__progress-section stages__progress-section--3">
                                 <div class="stages__progress-point">03</div>
                                 <div class="stages__progress-dotes">
                                     <div class="stages__progress-dote"></div>
@@ -414,7 +408,7 @@
                                     <div class="stages__progress-dote"></div>
                                 </div>
                             </div>
-                            <div class="stages__progress-section">
+                            <div data-section="4" class="stages__progress-section stages__progress-section--4">
                                 <div class="stages__progress-point">04</div>
                                 <div class="stages__progress-dotes">
                                     <div class="stages__progress-dote"></div>
@@ -432,20 +426,20 @@
                                     <div class="stages__progress-dote"></div>
                                 </div>
                             </div>
-                            <div class="stages__description-section ">
+                            <div class="stages__description-section stages__description-section--1">
                                 <h3 class="stages__description-title">Заявка</h3>
                                 <p class="stages__description-text">Оставьте заявку,чтобы получить индивидуальную
                                     консультацию</p>
                             </div>
-                            <div class="stages__description-section stages__description-section--disable">
+                            <div class="stages__description-section stages__description-section--2 stages__description-section--disable">
                                 <h3 class="stages__description-title">Подбор авто</h3>
                                 <p class="stages__description-text">Подберем автомобиль под ваши<br>критерии</p>
                             </div>
-                            <div class="stages__description-section stages__description-section--disable">
+                            <div class="stages__description-section stages__description-section--3 stages__description-section--disable">
                                 <h3 class="stages__description-title">Оформление</h3>
                                 <p class="stages__description-text">Согласуем бюджет и заключим<br>договор на авто</p>
                             </div>
-                            <div class="stages__description-section stages__description-section--disable">
+                            <div class="stages__description-section stages__description-section--4 stages__description-section--disable">
                                 <h3 class="stages__description-title">Доставка по РФ</h3>
                                 <p class="stages__description-text">После доставки в г. Владивосток, мы<br>отправим
                                     автомобиль в ваш город</p>
@@ -471,6 +465,7 @@
                         </div> -->
                     </div>
                 </div>
+                <button class="test__button">TEST</button>
             </div>
         </section>
 
@@ -786,6 +781,7 @@
     <script src="./js/paralax.js"></script>
     <script src="./js/contacts-form.js"></script>
     <script src="./js/delivery.js"></script>
+    <script src="./js/step.js"></script>
 </body>
 
 </html>

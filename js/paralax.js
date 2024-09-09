@@ -11,8 +11,8 @@ window.addEventListener("scroll", (e) => {
     let y = document.querySelector('.about').getBoundingClientRect().y -( document.querySelector('.delivery').offsetHeight / 2)
 
     if (y < 250 && y > -100) {
-        document.querySelector('.about__back--1').style.transform = `translate(-50%,-${(y / 2)}px)`
-        document.querySelector('.about__back--2').style.transform = `translate(-50%,${(y / 2) + 50}px)`
+        document.querySelector('.about__back--1').style.transform = `translate(-50%,-${(y / 3)}px)`
+        document.querySelector('.about__back--2').style.transform = `translate(-50%,${(y / 3) + 50}px)`
     }
 })
 
@@ -20,8 +20,10 @@ window.addEventListener("DOMContentLoaded", (e) => {
     let y = document.querySelector('.about').getBoundingClientRect().y -( document.querySelector('.delivery').offsetHeight / 2)
 
     if (y > -100) { 
-        document.querySelector('.about__back--1').style.transform = `translate(-50%,-${(y / 2)}px)`
-        document.querySelector('.about__back--2').style.transform = `translate(-50%,${(y / 2)}px)`
+        // document.querySelector('.about__back--1').style.transform = `translate(-50%,-${(y / 4)}px)`
+        // document.querySelector('.about__back--2').style.transform = `translate(-50%,${(y / 4)}px)`
+        document.querySelector('.about__back--1').style.transform = `translate(-50%,-250px)`
+        document.querySelector('.about__back--2').style.transform = `translate(-50%,250px)`
     }
 })
 
@@ -37,6 +39,8 @@ window.addEventListener("scroll", (e) => {
 window.addEventListener("DOMContentLoaded", (e) => {
     let y = document.querySelector('.delivery').getBoundingClientRect().y -( document.querySelector('.delivery').offsetHeight / 2)
     if (y > -100) {
-        document.querySelector('.delivery--img').style.transform = `translate(-50%,${(y/2)}px)`
+        // document.querySelector('.delivery--img').style.transform = `translate(-50%,${(y/2)}px)`
+        document.querySelector('.delivery--img').style.transform = `translate(-50%,600px)`
+
     }
 })
