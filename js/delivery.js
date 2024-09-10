@@ -23,7 +23,8 @@ dataDelivery.allRegion.map(item => {
 
 document.querySelectorAll('.delivery__form-select-menu > li >.dropdown-item--region').forEach(item => {
     item.addEventListener('click', () => {
-        document.querySelector('.delivery__form-select--map > .delivery__btn-text').style.color = "#000000"
+        // document.querySelector('.delivery__form-select--map > .delivery__btn-text').style.color = "rgb(0,0,0) !important"
+        document.querySelector('.delivery__form-select--map > .delivery__btn-text').setAttribute('style', `color:rgb(0,0,0) !important`)
         document.querySelector('.delivery__form-select--map > .delivery__btn-text').innerHTML = item.dataset.value
         Click(item)
     })
@@ -37,7 +38,7 @@ dataDelivery.allCars.map(item => {
 
 document.querySelectorAll('.delivery__form-select-menu > li > .dropdown-item--cars').forEach(item => {
     item.addEventListener('click', () => {
-        document.querySelector('.delivery__form-select--auto > .delivery__btn-text').style.color = "#000000"
+        document.querySelector('.delivery__form-select--auto > .delivery__btn-text').setAttribute('style', `color:rgb(0,0,0) !important`)
         document.querySelector('.delivery__form-select--auto > .delivery__btn-text').innerHTML = item.dataset.value
         Click(item)
     })
@@ -106,6 +107,7 @@ dataDelivery.allRegion.map(item => {
 
 document.querySelectorAll('.main__form-select--menu--auto > li > .dropdown-item--cars').forEach(item => {
     item.addEventListener('click', () => {
+        document.querySelector('.main__form-select--auto > .main__form-select--button > .main__dropdown-text').setAttribute('style', `color:rgb(0,0,0) !important`)
         document.querySelector('.main__form-select--auto > .main__form-select--button > .main__dropdown-text').innerHTML = item.dataset.value
         mainCar = item.dataset.value
     })
@@ -113,6 +115,7 @@ document.querySelectorAll('.main__form-select--menu--auto > li > .dropdown-item-
 
 document.querySelectorAll('.main__form-select--menu--region > li > .dropdown-item--region').forEach(item => {
     item.addEventListener('click', () => {
+        document.querySelector('.main__form-select--region > .main__form-select--button > .main__dropdown-text').setAttribute('style', `color:rgb(0,0,0) !important`)
         document.querySelector('.main__form-select--region > .main__form-select--button > .main__dropdown-text').innerHTML = item.dataset.value
         mainRegion = item.dataset.value
     })

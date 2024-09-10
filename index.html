@@ -80,7 +80,10 @@
 
         <section class="main">
             <div class="main__background-img--container">
-                <img class="main__background-img" src="./video/Main-Video.gif" alt="я джифка">
+                <video class="main__background-img" style="width: 100%; height: 100%;" autoplay muted>
+                    <source class="main__background-img--video" src="./video/Main-Video.mp4" type="video/mp4">
+                </video>
+                <!-- <img class="" src= > -->
             </div>
             <div class="container">
                 <div class="main__inner">
@@ -336,7 +339,7 @@
                         потребности и бюджет.</p>
                 </div>
                 <div class="about__btns">
-                    <button class="about__btn about__btn-consultation">Получить консультацию</button>
+                    <button class="about__btn about__btn-consultation" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить консультацию</button>
                     <button class="about__btn about__btn-feedback">
                         <div class="about__btn-rate">
                             <img src="./image/Star.svg" alt="" class="about__btn-rate--img">
@@ -689,6 +692,46 @@
                 </div>
             </div>
         </section>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form action="" class="modal__form">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h3 class="modal__form-title">Оставить заявку</h3>
+                        <p class="modal__form-text">Оставьте свою заявку и наш менеджер свяжется с Вами для уточнения деталей.</p>
+                        <div class="modal__form-section modal__form-section--flex">
+                            <div class="modal__form-input--box">
+                                <p class="modal__form-text">Имя</p>
+                                <input type="text" maxlength="50" name="name" class="modal__form-input">
+                            </div>
+                            <div class="modal__form-input--box">
+                                <p class="modal__form-text">Телефон (Обязательно)</p>
+                                <input type="text" name="phone" class="modal__form-input modal__form-input--tel">
+                            </div>
+                        </div>
+                        <div class="modal__form-section">
+                            <div class="modal__form-input--box">
+                                <p class="modal__form-text">Уточните свой вопрос</p>
+                                <textarea type="text" name="question" class="modal__form-input modal__form-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal__form-section modal__form-section--bottom">
+                            <div class="modal__form-input--box modal__form-input--box-flex">
+                                <input class="modal__form-checkbox" type="checkbox" id="check-modal" name="check" value="yes">
+                                <label class="custom--checkbox" for="check-modal"></label>
+                                <p class="modal__form-text">С <a href="" class="blue--link">правилами политики<br>конфиденциальности</a> ознакомлен</p>
+                            </div>
+                            <div class="modal__form-input--box modal__form-btn--box">
+                                <button disabled class="modal__form-btn">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+          </div>
+
     </main>
     <footer class="footer">
         <div class="container">
@@ -772,6 +815,10 @@
             phone: true,
             phoneRegionCode: 'RU'
         });
+        var cleave = new Cleave('.modal__form-input--tel', {
+            phone: true,
+            phoneRegionCode: 'RU'
+        });
     </script>
 
     <script src="./js/script.js"></script>
@@ -782,6 +829,7 @@
     <script src="./js/contacts-form.js"></script>
     <script src="./js/delivery.js"></script>
     <script src="./js/step.js"></script>
+    <script src="./js/modal-valid.js"></script>
 </body>
 
 </html>

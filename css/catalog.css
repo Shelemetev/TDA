@@ -429,6 +429,7 @@ body {
     border: none;
     border-radius: 12px;
     text-align: left;
+    padding: 12px 38px 12px 12px;
 }
 
 .catalog__filter-select--btn::after {
@@ -487,4 +488,33 @@ body {
 
 .catalog__filter-double-input > .catalog__filter-select:last-of-type > .catalog__filter-select--btn {
     border-radius: 0 12px 12px 0;
+}
+
+.dropdown-item {
+    padding: 4px 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 12px;
+    font-weight: 400;
+    color: #232323;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    background-color: transparent !important;
+    color: #232323;
+}
+
+.dropdown-menu {
+    width: 100%;
+    padding: 8px;
+}
+
+.catalog__slide--japan {
+    padding: 8px;
+}
+
+.dropdown-menu {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0px 4px 24px 0px #0000001F;
 }

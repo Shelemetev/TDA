@@ -15,7 +15,11 @@ inputs.forEach(input => {
         let inputNames = Object.keys(values)
 
         let result = inputNames.map(item => {
-            return values[item] != ''
+            if (item === 'phone') {
+                return values[item].length >= 15
+            } else {
+                return values[item] != ''
+            }  
         })
 
         let step = 0
@@ -50,8 +54,14 @@ checkbox.addEventListener('input', () => {
     values[checkboxName] = checkboxValue
     let inputNames = Object.keys(values)
 
+    
+
     let result = inputNames.map(item => {
-        return values[item] != ''
+        if (item === 'phone') {
+            return values[item].length >= 15
+        } else {
+            return values[item] != ''
+        }   
     })
 
     let step = 0

@@ -62,6 +62,7 @@ dataJapan.map(item => {
         <div class="swiper-slide catalog__slide catalog__slide--japan" data-count="${item.count}">
             <div class="catalog__slide-img--box">
                 <img src="${item.img}" alt="" class="catalog__slide-img">
+                <div class="catalog__slide-img--rate">${item.rate}</div>
             </div>
             <div class="catalog__slide-content">
                 <h3 class="catalog__slide-title">${item.title}</h3>
