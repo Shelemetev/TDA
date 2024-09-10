@@ -63,10 +63,12 @@ dataChina.map(item => {
             <div class="catalog__slide-img--box">
                 <img src="${item.img}" alt="" class="catalog__slide-img">
             </div>
-            <h3 class="catalog__slide-title">${item.title}</h3>
-            <p class="catalog__slide-suptext">${item.suptext}</p>
-            <p class="catalog__slide-count">${item.count.replace(/\B(?=(\d{3})+(?!\d))/g, " ")} ₽</p>
-            <button class="catalog__slide-btn">Оставить заявку</button>
+            <div class="catalog__slide-content">
+                <h3 class="catalog__slide-title">${item.title}</h3>
+                <p class="catalog__slide-suptext">${item.suptext}</p>
+                <p class="catalog__slide-count">${item.count.replace(/\B(?=(\d{3})+(?!\d))/g, " ")} ₽</p>
+                <button class="catalog__slide-btn">Оставить заявку</button>
+            </div>
         </div>
     `
 })
